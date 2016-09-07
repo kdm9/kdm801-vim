@@ -1,0 +1,12 @@
+snippet header "Pandoc YAML header" b
+---
+title: $1
+author: `git config --global --get user.name`
+date: ${2:`date +%Y-%m-%d`}
+---
+
+# $1
+
+$0
+endsnippet
+
