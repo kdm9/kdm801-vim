@@ -1,2 +1,2 @@
 cite|pdf -S -V geometry:margin=1in  -V papersize=A4 -V documentclass=article -V fontsize=12pt --latex-engine=xelatex
-kdmhtml|html -S -s -c ~/.vim/data/kultiad-serif.css --katex=~/.vim/data/KaTeX/katex.js
+kdmhtml|html -S -s -c ~/.vim/bundle/kdm801-vim/data/kultiad-serif.css --katex=~/.vim/bundle/kdm801-vim/data/KaTeX/katex.js
