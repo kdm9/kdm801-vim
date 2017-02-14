@@ -8,10 +8,12 @@ fu! TogglePandocAuto()
     endif
 endf
 
-nnoremap <buffer> <localleader>m <Esc>:call TogglePandocAuto()<CR>
-nnoremap <buffer> <localleader>lc <Esc>:Pandoc #cite<CR>
-nnoremap <buffer> <localleader>lcv <Esc>:Pandoc! #cite<CR>
-nnoremap <buffer> <localleader>lp <Esc>:Pandoc pdf<CR>
-nnoremap <buffer> <localleader>lpv <Esc>:Pandoc! pdf<CR>
-nnoremap <buffer> <localleader>lh <Esc>:Pandoc #kdmhtml<CR>
-nnoremap <buffer> <localleader>lhv <Esc>:Pandoc #kdmhtml<CR>
+nnoremap <buffer> <localleader>fm <Esc>:call TogglePandocAuto()<CR>
+nnoremap <buffer> <localleader>fc <Esc>:Pandoc #cite<CR>
+nnoremap <buffer> <localleader>fcv <Esc>:Pandoc! #cite<CR>
+nnoremap <buffer> <localleader>fp <Esc>:Pandoc pdf<CR>
+nnoremap <buffer> <localleader>fpv <Esc>:Pandoc! pdf<CR>
+nnoremap <buffer> <localleader>fh <Esc>:Pandoc #kdmhtml<CR>
+nnoremap <buffer> <localleader>fhv <Esc>:Pandoc #kdmhtml<CR>
+nnoremap <buffer> <localleader>fah <Esc>:let b:pandoc#command#autoexec_command = 'Pandoc #kdmhtml'<CR>
+nnoremap <buffer> <localleader>fap <Esc>:let b:pandoc#command#autoexec_command = 'Pandoc #cite'<CR>
