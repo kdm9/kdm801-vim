@@ -10,6 +10,7 @@ endf
 
 fu! SetPandocAuto(type)
     let g:pandoc#command#autoexec_command = 'Pandoc ' . a:type
+    echo "Auto-compilaiton format is now '" . a:type . "'"
 endf
 
 
