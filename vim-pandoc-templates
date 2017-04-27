@@ -1,3 +1,4 @@
 cite|pdf -Ss --latex-engine=xelatex --filter pandoc-citeproc --filter pandoc-placetable
-kdmhtml|html -Ss -c ~/.vim/bundle/kdm801-vim/resources/kultiad-serif.css --katex=~/.vim/bundle/kdm801-vim/resources/katex/dist/katex.min.js --katex-stylesheet=~/.vim/bundle/kdm801-vim/resources/katex/dist/katex.min.css
+kdmhtml|html -Ss --self-contained -c ~/.vim/bundle/kdm801-vim/resources/kultiad-serif.css --katex=~/.vim/bundle/kdm801-vim/resources/katex/dist/katex.min.js --katex-stylesheet=~/.vim/bundle/kdm801-vim/resources/katex/dist/katex.min.css
 kdmslides|revealjs -Ss --katex=~/.vim/bundle/kdm801-vim/resources/katex/dist/katex.min.js --katex-stylesheet=~/.vim/bundle/kdm801-vim/resources/katex/dist/katex.min.css -V revealjs-url=~/.vim/bundle/kdm801-vim/resources/revealjs/ --self-contained
+htmlnb|html -Ss --toc --toc-depth 1 --self-contained -c ~/.vim/bundle/kdm801-vim/resources/kultiad-serif.css --katex=~/.vim/bundle/kdm801-vim/resources/katex/dist/katex.min.js --katex-stylesheet=~/.vim/bundle/kdm801-vim/resources/katex/dist/katex.min.css
