@@ -26,3 +26,4 @@ map <buffer> <localleader>fsv <Esc>:Pandoc #kdmslides<CR>
 map <buffer> <localleader>fah <Esc>:call SetPandocAuto('#kdmhtml')<CR>
 map <buffer> <localleader>fas <Esc>:call SetPandocAuto('#kdmslides')<CR>
 map <buffer> <localleader>fac <Esc>:call SetPandocAuto('#cite')<CR>
+map <buffer> <localleader>fan <Esc>:call SetPandocAuto('#htmlnb')<CR>
