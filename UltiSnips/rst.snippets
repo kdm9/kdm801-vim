@@ -1,11 +1,37 @@
 snippet blogheader "Pelican blog header" b
+:title: ${1:Level 1 header}
 :author: `git config --global --get user.name`
-:date: ${1:`date +%Y-%m-%d`}
-:tags: $2
-:category: $3
+:date: ${2:`date +%Y-%m-%d`}
+:tags: $3
+:category: $4
+:status: draft
+
+$0
+
+.. vim: tw=0 wrap et sw=2 ts=2 spell
+endsnippet
+
+snippet link "Rst link"
+\`${1:${VISUAL:displayed text}} <${2:https://link.com}>\`_$0
+endsnippet
+
+snippet h1 "L1 header" b
+${1:Level 1 header}
+`!p snip.rv = '#' * len(t[1])`
 
 $0
 endsnippet
-snippet link "Rst link"
-\`${1:displayed text} <${2:https://link.com}>\`_$0
+
+snippet h2 "L2 header" b
+${1:Level 2 header}
+`!p snip.rv = '=' * len(t[1])`
+
+$0
+endsnippet
+
+snippet h3 "L3 header" b
+${1:Level 3 header}
+`!p snip.rv = '-' * len(t[1])`
+
+$0
 endsnippet
